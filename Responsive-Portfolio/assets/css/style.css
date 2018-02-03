@@ -1,0 +1,273 @@
+/* allows make shanges to padding without affecting the total space*/
+*{
+    box-sizing:border-box;
+}
+    
+
+ /*here i tell the page to have below default elements?*/
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+    color:rgb(54, 53, 53);
+    line-height:34px;
+    background:"img src(maderavieja.png)";
+}
+
+/*all containers takes content area is equal to 960px*/
+.container {
+    width:100%;
+   max-width:960px;
+    margin:0 auto;
+    clear:both;
+}
+
+h1,h2,h3,p{
+    margin-bottom: 20px; 
+}
+p:last-child{
+    margin-bottom: 0;
+}
+
+h1,h2,h3,{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #4aaaa5;
+ }
+
+ h1{
+    padding-bottom: 20px;
+    font-size: 34px;
+    line-height: 49px;
+    border-bottom: 3px solid #ddd;
+}
+
+h2,h3{
+    font-size: 24px;
+}
+
+/*masterhead and logo*/
+
+#masterhead{
+    background: #fff;
+    margin:0 0 30px;
+    color:#fff;
+    z-index: 99;
+    overflow:auto;
+    border-bottom: 2px solid #ccc;
+    position: fixed;
+    width:100%;
+}
+
+#logo{
+    width: 250px;
+    height:90px;
+    background: #4aaaa5;
+    float: left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight:700;
+    text-align: center;
+    text-decoration: none;
+    line-height: 90px;
+    color:#fff;
+}
+
+nav{
+    float:right;
+    margin-top: 25px;   
+}
+
+nav a{
+    color:#999;
+    display:inline-block;/*changes display properties stablished to inline if ther is room for it*/
+    margin-left:15px;
+    padding-left: 15px;
+    border-left:1px solid #efefef;
+    line-height: 18px;
+    text-decoration: none;   
+}
+
+/*first align on nav bar should not have a border*/
+nav a:first-child{
+    border-left: 0 none;   
+}
+
+/*main section and image default elements*/
+
+#main-container{ 
+    padding-top:130px;
+}
+
+.main-section{
+    background:#fff;
+    padding:30px;
+    margin: 0 0 40px 0;
+    width:100%;/*main section takes 100%of conatiner*/
+    max-width: 650px;/*will stop expanding at 650px rate no matter how big screen is*/
+    float:left;
+    position: relative;
+    border:1px solid #ddd;
+}
+
+.auth-image{
+    width:200px;
+    height:auto;
+    margin-top: 10px;
+    float:left;
+    margin-right:25px;
+    border:1 px solid #ddd;
+}
+
+
+/*sidebar section*/
+
+.sidebar{
+    background: #fff;
+    padding: 30px;
+    width:100%;
+    max-width:270px;
+    float:right;
+    border: 1px solid #ddd; 
+    margin-bottom: 40px; 
+    position: relative;
+
+}
+
+h3, .sidebar, h2{
+    margin-bottom:15px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid#eee;
+    line-height:22px;
+}
+
+/*social icons section*/
+.social{
+    width: 62px;
+    height:62px;
+    margin-top: 8px;
+    margin-right: 5px;
+    float:center;
+}
+
+.social:last-child{
+    margin-right: 0;
+}
+ /*footer section last to style to keep an order*/
+
+footer{
+    background:#666;
+    color:#fff;
+    padding:30px 0;
+    clear:both;
+    border-top: 8px solid #4aaaa5;
+    font-size: 16px;
+    color:#fff;
+    text-align: center;   
+}
+
+@media screen and (max-width: 980px){[class*="col-"]{width: 100%;}}
+@media screen and (max-width: 760px){[class*="col-"]{width: 100%;}}
+@media screen and (max-width: 640px){[class*="col-"]{width: 100%;}}
+
+
+
+/*portfolio page*/
+
+.work{
+    position:relative;
+    overflow:auto;
+    float:left;
+    width:275px;
+    margin:20px 0 25px;   
+}
+
+.work:nth-child(even){
+    margin-right: 40px;
+}
+
+
+.work img{
+    width: 100%;
+    border:none;
+    opacity:.8;   
+}
+
+
+.work h3{
+    position:absolute;
+    bottom:20px;
+    width:100%;
+    padding:15px;
+    margin-bottom: 0;
+    font-weight:300;
+    line-height: 30px;
+    text-align: center;
+    background-color: #4aaaa5;
+    color:#fff;
+    border-bottom: 0;
+}
+
+@media screen and (max-width: 980px){[class*="col-"]{width: 100%;}}
+@media screen and (max-width: 760px){[class*="col-"]{width: 100%;}}
+@media screen and (max-width: 640px){[class*="col-"]{width: 100%;}}
+
+
+
+
+/*contact page*/
+
+#contact-form ul{
+    margin-bottom: 20px;
+}
+
+#contact-form li{
+    margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea{
+    display:block;
+    width:100%;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    height:35px;
+    padding: 0 10px;
+    font-size: 16px;
+    border:1px solid;
+    color:#ddd;
+}
+
+textarea{
+    height:200px;
+}
+
+input[type=submit]{
+    background:#4aaaa5;
+    border:none;
+    color:#fff;
+    font-size:18px;
+    padding:10px 30px;
+    cursor:pointer;
+}
+
+
+@media screen and (max-width: 980px){[class*="col-"]{width: 100%;}}
+@media screen and (max-width: 760px){[class*="col-"]{width: 100%;}}
+@media screen and (max-width: 640px){[class*="col-"]{width: 100%;}}
+
+
+
+
+
+
+
+
+
+
+
